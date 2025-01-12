@@ -1,0 +1,37 @@
+@use '@/app/styles/skeleton.scss';
+
+.wrapper {
+    @include flex-column;
+    @include set-width(401px);
+    padding: 8px;
+    background-color: var(--white1);
+    border: 2px solid var(--purple6);
+    border-radius: 16px;
+
+    .img {
+        @include set-width(100%);
+        @include set-height(264px);
+        object-fit: cover;
+        object-position: center;
+        border-radius: 12px;
+        margin-bottom: 16px;
+    }
+
+    .body {
+        @include flex-column;
+        padding: 16px 20px;
+
+        .date {
+            @include set-width(100%);
+            @include set-height(20px);
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .heading {
+            @include set-width(100%);
+            @include set-height(48.01px);
+            border-radius: 8px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    background-color: var(--purple2);
+    min-height: 100dvh;
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        overflow-y: initial;
+        height: initial;
+        min-height: initial;
+    }
+}

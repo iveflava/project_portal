@@ -1,0 +1,51 @@
+.wrapper{
+    @include flex-center;
+    
+    .label {
+        display: inline-block;
+        position: relative;
+        width: 24px;
+        height: 24px;
+        padding: 2px;
+    
+        .input {
+            width: 0;
+            height: 0;
+            opacity: 0;
+            display: none;
+        }
+    
+        .span {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border: 2px solid var(--gray7);
+            border-radius: 50%;
+            transition: .2s;
+        }
+    
+        .span::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            cursor: pointer;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 23px;
+            transition: .2s;
+        }
+    
+        .input:checked+.span {
+            border: 2px solid var(--purple7);
+        }
+    
+        .input:checked+.span::before {
+            background-color: var(--purple7);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+@use '@/app/styles/animations.scss';
+
+.wrapper {
+    display: flex;
+    background-color: var(--purple2);
+    min-height: 100dvh;
+
+    .container {
+        padding: 35px 33px 20px;
+
+        .header {
+            margin-bottom: 24px;
+            animation-name: appearance;
+            animation-duration: .3s;
+        }
+    }
+}

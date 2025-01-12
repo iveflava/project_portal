@@ -1,0 +1,12 @@
+@use '@/app/styles/animations.scss';
+
+.wrapper {
+    @include flex-column;
+    @include set-width(377px);
+    background-color: var(--gray6);
+    padding: 35px 33px 20px;
+
+    .logout {
+        margin-bottom: 20px;
+    }
+}

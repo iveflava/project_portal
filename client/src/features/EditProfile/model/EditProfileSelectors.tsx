@@ -1,0 +1,27 @@
+/* eslint-disable no-undef */
+export const selectEditProfileStateFirstName = (state: RootState) => state.editProfile.firstName;
+export const selectEditProfileStateErrorFirstName = (state: RootState) => state.editProfile.errorFirstName;
+export const selectEditProfileStateSecondName = (state: RootState) => state.editProfile.secondName;
+export const selectEditProfileStateErrorSecondName = (state: RootState) => state.editProfile.errorSecondName;
+export const selectEditProfileStateRole = (state: RootState) => state.editProfile.role;
+export const selectEditProfileStateErrorRole = (state: RootState) => state.editProfile.errorRole;
+export const selectEditProfileStateCity = (state: RootState) => state.editProfile.city;
+export const selectEditProfileStateErrorCity = (state: RootState) => state.editProfile.errorCity;
+export const selectEditProfileStateCountry = (state: RootState) => state.editProfile.country;
+export const selectEditProfileStateErrorCountry = (state: RootState) => state.editProfile.errorCountry;
+export const selectEditProfileStateAboutUser = (state: RootState) => state.editProfile.aboutUser;
+export const selectEditProfileStateErrorAboutUser = (state: RootState) => state.editProfile.errorAboutUser;
+export const selectEditProfileStateBirthday = (state: RootState) => state.editProfile.birthday;
+export const selectEditProfileStateErrorBirthday = (state: RootState) => state.editProfile.errorBirthday;
+export const selectEditProfileStateMail = (state: RootState) => state.editProfile.mail;
+export const selectEditProfileStateErrorMail = (state: RootState) => state.editProfile.errorMail;
+export const selectEditProfileStateTelegram = (state: RootState) => state.editProfile.telegram;
+export const selectEditProfileStateErrorTelegram = (state: RootState) => state.editProfile.errorTelegram;
+export const selectEditProfileStateInstagram = (state: RootState) => state.editProfile.instagram;
+export const selectEditProfileStateErrorInstagram = (state: RootState) => state.editProfile.errorInstagram;
+export const selectEditProfileStateHardwareAndSoftware = (state: RootState) => state.editProfile.hardwareAndSoftware;
+export const selectEditProfileStateErrorHardwareAndSoftware = (state: RootState) => state.editProfile.errorHardwareAndSoftware;
+export const selectEditProfileStateBooks = (state: RootState) => state.editProfile.books;
+export const selectEditProfileStateErrorBooks = (state: RootState) => state.editProfile.errorBooks;
+export const selectEditProfileStateAvatarSrc = (state: RootState) => state.editProfile.avatarSrc;
+export const selectEditProfileStateAvatarBlob = (state: RootState) => state.editProfile.avatarBlob;

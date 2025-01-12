@@ -1,0 +1,40 @@
+.wrapper {
+    @include flex-column-center;
+    row-gap: 8px;
+}
+
+.form {
+    @include flex-column;
+    width: 480px;
+    padding: 32px;
+    background-color: var(--white1);
+    border-radius: 10px;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    color: var(--black1);
+    margin-bottom: 40px;
+    user-select: none;
+}
+
+.input_container {
+    margin-bottom: 12px;
+}
+
+.text {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--black1);
+    margin-bottom: 55px;
+    user-select: none;
+}
+
+.text_bottom {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--black1);
+    user-select: none;
+}

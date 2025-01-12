@@ -1,0 +1,47 @@
+@use '@/app/styles/animations.scss';
+
+.wrapper {
+    @include flex-column;
+    row-gap: 24px;
+
+    .team {
+        @include flex-column;
+        padding: 24px;
+        background-color: var(--white1);
+        border-radius: 10px;
+        border: 1px solid var(--gray12);
+        animation-name: appearance;
+        animation-duration: .3s;
+
+        .header {
+            @include flex-center-between;
+            column-gap: 25px;
+
+            .name_container {
+                @include flex-align-center;
+                column-gap: 18px;
+                font-size: 20px;
+                line-height: 26px;
+                font-weight: 500;
+                color: var(--black1);
+                margin-bottom: 16px;
+
+                .count {
+                    opacity: .4;
+                }
+            }
+        }
+
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+    }
+
+    .empty {
+        @include set-height(268px);
+        @include flex-center;
+        flex-grow: 1;
+    }
+}

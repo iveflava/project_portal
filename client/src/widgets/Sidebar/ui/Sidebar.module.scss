@@ -1,0 +1,18 @@
+@use '@/app/styles/animations.scss';
+
+.wrapper {
+    @include flex-column;
+    @include set-width(88px);
+    background-color: var(--purple2);
+    transition: min-width, width, max-width;
+    transition-duration: .2s;
+
+    &.open {
+        @include set-width(222px);
+    }
+
+    &.first_render {
+        animation-name: appearance;
+        animation-duration: .3s;
+    }
+}

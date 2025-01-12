@@ -1,0 +1,17 @@
+.logout {
+    @include flex-center;
+    @include set-width(48px);
+    @include set-height(48px);
+    align-self: flex-end;
+    background-color: var(--purple2);
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    animation-name: appearance;
+    animation-duration: .3s;
+
+    .icon {
+        @include set-width(20px);
+        @include set-height(20px);
+    }
+}

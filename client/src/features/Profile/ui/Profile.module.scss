@@ -1,0 +1,133 @@
+@use '@/app/styles/animations.scss';
+
+.wrapper {
+    @include flex-column;
+    padding: 24px;
+    background-color: var(--white1);
+    border: 1px solid var(--gray8);
+    border-radius: 10px;
+    animation-name: appearance;
+    animation-duration: .3s;
+
+    .header {
+        display: flex;
+        column-gap: 24px;
+        margin-bottom: 24px;
+
+        .avatar {
+            @include set-width(230px);
+            @include set-height(230px);
+            border-radius: 50%;
+            object-fit: cover;
+            object-position: center;
+            user-select: none;
+        }
+
+        .container {
+            @include flex-column;
+            flex-grow: 1;
+            row-gap: 16px;
+
+            .top {
+                display: flex;
+                column-gap: 24px;
+
+                .user {
+                    @include flex-column;
+                    flex-grow: 1;
+
+                    .name {
+                        font-size: 20px;
+                        line-height: 26px;
+                        font-weight: 600;
+                        color: var(--black1);
+                        margin-bottom: 8px;
+                        user-select: none;
+                    }
+
+                    .place {
+                        font-size: 14px;
+                        line-height: 20px;
+                        color: var(--gray9);
+                        margin-bottom: 8px;
+                        user-select: none;
+                    }
+                }
+            }
+
+            .bottom {
+                @include flex-column;
+                row-gap: 16px;
+
+                .item {
+                    @include flex-align-start;
+                    column-gap: 16px;
+
+                    .description {
+                        @include set-width(92px);
+                        font-size: 12px;
+                        line-height: 16px;
+                        color: var(--gray9);
+                        padding: 4px 0;
+                        user-select: none;
+                    }
+
+                    .text {
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: var(--black1);
+                        user-select: none;
+                    }
+                }
+
+                .accounts {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 24px;
+
+                    .account {
+                        @include flex-align-start;
+                        column-gap: 8px;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: var(--black1);
+                    }
+                }
+            }
+        }
+
+    }
+
+    .body {
+        @include flex-column;
+
+        .line {
+            @include set-height(1px);
+            background-color: var(--gray8);
+        }
+
+        .item {
+            @include flex-align-start;
+            padding: 24px 0;
+            border-top: 1px solid var(--gray8);
+            column-gap: 24px;
+
+            .heading {
+                @include set-width(231px);
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 26px;
+                color: var(--black1);
+                user-select: none;
+            }
+
+            .text {
+                font-size: 12px;
+                line-height: 16px;
+                color: var(--gray9);
+                padding: 5px 0;
+                user-select: none;
+            }
+        }
+    }
+}

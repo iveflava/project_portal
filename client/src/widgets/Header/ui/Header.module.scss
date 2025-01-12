@@ -1,0 +1,13 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .heading {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 46px;
+        color: var(--gray4);
+        user-select: none;
+    }
+}

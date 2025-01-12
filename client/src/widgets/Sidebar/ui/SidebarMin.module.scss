@@ -1,0 +1,118 @@
+.wrapper {
+    @include flex-column-center;
+    padding: 24px 0 35px;
+    height: 100%;
+
+    .logo {
+        @include set-width(34.5px);
+        @include set-height(57px);
+        margin-bottom: 52px;
+        user-select: none;
+    }
+
+    .user {
+        @include flex-column-center;
+        margin-bottom: 130px;
+        position: relative;
+        width: 100%;
+
+        .avatar_container {
+            @include flex-center;
+            @include set-width(47px);
+            @include set-height(47px);
+            border-radius: 50%;
+            border: 2px solid var(--purple3);
+            user-select: none;
+
+            .avatar {
+                @include set-width(42.12px);
+                @include set-height(42.12px);
+                object-fit: cover;
+                object-position: center;
+                background-color: var(--white1);
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .list {
+        @include flex-column;
+        row-gap: 24px;
+        width: 100%;
+        margin-bottom: 30px;
+
+        .item {
+            @include flex-center;
+            position: relative;
+
+            svg path {
+                transition-property: opacity, fill-opacity;
+                transition-duration: .2s;
+            }
+
+            &:hover {
+                svg path {
+                    opacity: 1;
+                    fill-opacity: 1;
+                }
+            }
+
+            &.active {
+                svg path {
+                    opacity: 1;
+                    fill-opacity: 1;
+                }
+            }
+
+            &.disabled {
+                pointer-events: none;
+                opacity: .4;
+            }
+        }
+    }
+
+    .mark {
+        &::after {
+            content: '';
+            @include set-width(5px);
+            @include set-height(26px);
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            border-radius: 0 6px 6px 0;
+            background-color: transparent;
+            transition-property: background-color;
+            transition-duration: .6s;
+        }
+
+        &.active {
+
+            &::after {
+                background-color: var(--white1);
+            }
+        }
+    }
+
+    .collapse {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-grow: 1;
+        transform: rotateY(180deg);
+
+        .icon {
+            cursor: pointer;
+
+            path {
+                transition-property: fill;
+                transition-duration: .2s;
+            }
+
+            &:hover {
+                path {
+                    fill: var(--white1);
+                }
+            }
+        }
+    }
+}

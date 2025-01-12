@@ -1,0 +1,10 @@
+.container {
+    @include flex-column;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    row-gap: 8px;
+    max-width: 376px;
+    align-items: flex-end;
+    z-index: 3000;
+}

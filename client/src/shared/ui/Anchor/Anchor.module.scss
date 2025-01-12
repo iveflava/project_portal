@@ -1,0 +1,8 @@
+.anchor {
+    color: var(--purple1);
+    text-decoration: none;
+    
+    &:active {
+        color: var(--purple1)
+    }
+}

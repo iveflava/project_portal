@@ -1,0 +1,19 @@
+.container{
+    @include flex-column;
+    position: relative;
+    row-gap: 8px;
+}
+
+.label{
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--gray9);
+    user-select: none;
+}
+
+.error{
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--red1);
+    user-select: none;
+}

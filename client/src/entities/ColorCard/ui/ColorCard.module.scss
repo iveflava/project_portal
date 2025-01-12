@@ -1,0 +1,57 @@
+@use '@/app/styles/animations.scss';
+
+.wrapper {
+    @include flex-column;
+    @include set-width(188px);
+    padding: 16px;
+    border-radius: 16px;
+    animation-name: appearance;
+    animation-duration: .3s;
+
+    &.green {
+        background-color: var(--green1);
+    }
+
+    &.red {
+        background-color: var(--red2);
+    }
+
+    &.yellow {
+        background-color: var(--yellow1);
+    }
+
+    &.purple {
+        background-color: var(--purple5);
+    }
+
+    .img_container {
+        @include flex-center;
+        padding: 9px 0;
+
+        .img {
+            @include set-width(100px);
+            @include set-height(100px);
+            user-select: none;
+        }
+    }
+
+    .heading {
+        flex-grow: 1;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.48px;
+        color: var(--black2);
+        margin-bottom: 8px;
+        user-select: none;
+        @include set-line-count(2);
+    }
+
+    .text {
+        font-size: 13px;
+        line-height: 15.51px;
+        font-weight: 500;
+        user-select: none;
+        display: -webkit-box;
+        @include set-line-count(2);
+    }
+}

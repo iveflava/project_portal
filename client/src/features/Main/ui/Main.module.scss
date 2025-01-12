@@ -1,0 +1,37 @@
+@use '@/app/styles/animations.scss';
+
+.wrapper {
+    @include flex-column;
+    padding: 30px 40px 20px;
+    flex-grow: 1;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    height: 100dvh;
+    min-height: 100dvh;
+
+    .heading {
+        font-size: 36px;
+        font-weight: 600;
+        line-height: 46px;
+        color: var(--gray4);
+        margin-bottom: 37px;
+        user-select: none;
+        animation-name: appearance;
+        animation-duration: .3s;
+    }
+
+    .news {
+        @include flex-column;
+
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 46px;
+            color: var(--gray4);
+            margin-bottom: 10px;
+            animation-name: appearance;
+            animation-duration: .3s;
+            user-select: none
+        }
+    }
+}

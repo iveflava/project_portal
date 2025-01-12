@@ -1,0 +1,42 @@
+.wrapper {
+    @include flex-column-center;
+    justify-content: center;
+    background-color: var(--purple8);
+    height: 100dvh;
+    user-select: none;
+
+
+    .img {
+        @include set-width(150px);
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 20px;
+    }
+
+    .error {
+        font-size: 30px;
+        font-weight: 600;
+        line-height: 40px;
+        color: var(--white1);
+    }
+
+    .text {
+        font-size: 14px;
+        color: var(--white1);
+    }
+
+    .button_back {
+        @include set-height(36);
+        padding: 6px 16px;
+        background-color: var(--white1) !important;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        color: var(--black1);
+        text-decoration: none;
+        margin-top: 16px;
+        cursor: pointer;
+        user-select: none;
+    }
+}

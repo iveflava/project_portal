@@ -1,0 +1,27 @@
+.button {
+    transition: .2s;
+    width: fit-content;
+
+    &.purple {
+        background-color: var(--purple1) !important;
+    }
+
+    &.gray {
+        background-color: var(--gray10) !important;
+        color: var(--black1);
+
+        &:hover {
+            background-color: var(--blue1) !important;
+        }
+    }
+
+    &.white {
+        background-color: var(--white1) !important;
+        color: var(--black1);
+    }
+}
+
+.button[disabled] {
+    color: var(--white1) !important;
+    opacity: .6;
+}
