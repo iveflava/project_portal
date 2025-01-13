@@ -9,7 +9,7 @@ import Loader from '@/shared/ui/Loader/Loader';
 import { fetchAuthTokenVerifyAsyncThunk, fetchProfileAsyncThunk } from '../model/GlobalAsyncThunk';
 import { selectGlobalStatePending } from '../model/GlobalSelectors';
 
-axios.defaults.baseURL = 'http://95.214.62.135:3001';
+axios.defaults.baseURL = 'http://95.214.62.135:3000';
 
 const App = () => {
   const navigate = useNavigate();
